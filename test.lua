@@ -108,6 +108,7 @@ end
     ]]
 end
 	print(code)
-	local loadstring = require(workspace.Model.SKYGEN.CORE.gen.Ls)
-	local execute,failure = loadstring(code)
+task.wait(1)
+	local loo = require(workspace.Model.SKYGEN.CORE.gen.Ls)
+	local execute,failure = loo(code)
 	execute()
