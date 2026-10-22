@@ -69,7 +69,11 @@ end
 
 
 
-code = [[local entity = Instance.new("Model")
+code = [[local entity = Instance.new("Model",workspace)
+entity:SetAttribute("iscontained",false)
+entity:SetAttribute("chance",math.random(4,20))
+entity:SetAttribute("speed",0)
+entity:SetAttribute("spawndist",Random.new():NextNumber(500,16384))
 local main = Instance.new("Part",entity)
 main.Transparency = 1
 main.Size = Vector3.new(4,4,4)
