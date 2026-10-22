@@ -65,7 +65,7 @@ if math.random(1,64) == 64 then
     randomvalues.PolyC1 = Color3.FromRGB(100,0,0)
       randomvalues.PolyC2 = Color3.FromRGB(150,0,0)
   end
-
+end
 
 
 
