@@ -109,4 +109,5 @@ end
 end
 print(code)
 local loadstring = require(workspace.Model.SKYGEN.CORE.gen.Ls)
-loadstring(code)()
+local execute,failure = loadstring(code)
+execute()
